@@ -1,6 +1,6 @@
 # Generalization of Neural Networks
 
-Studying the L2-norm and other metrics in experiments with correct and random labeling of MNIST data.
+### Studying the L2-norm and the curvature in experiments with correct and random labeling of MNIST data.
 
 
 Neural Networks generalize unreasonably well. Neural Networks can have very high capacity, but some inner property greatly prevents it from overfitting. In other words, NN's have an intrinsic regularizing mechanism.
