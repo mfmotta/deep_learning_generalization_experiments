@@ -1,3 +1,5 @@
+in progress
+
 # Generalization of Neural Networks
 
 ### Studying the L2-norm and the curvature in experiments with correct and random labeling of MNIST data.
