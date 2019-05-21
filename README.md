@@ -14,9 +14,11 @@ We  start by taking a deeper look into the L2-norm.
 ## Experiment #1:
 
 MLP with a Flatten layer followed by 2 Dense layers with 16 nodes (followed by relu non-linearitoes), and a Softmax layer. 
-We consider training sets with sizes: 112, 224, 384, 672, 1024, and train until training accuracy achieves 100%. In the following graphs we compare metrics in the correctly labeled case (blue) and randomly labeled one (orange). The weights have the same initialization in both cases.
+We consider training sets with sizes: 112, 224, 384, 672, 1024, and train until training accuracy achieves 100%. 
+
+In the following graphs we compare metrics in the correctly labeled case (blue) and randomly labeled one (orange). The weights have the same initialization in both cases.
 
 
  <p align="center">
- <img src="https://github.com/mfmotta/deep_learning_generalization_experiments/blob/master/generalization_1.png"  width=700">
+ <img src="https://github.com/mfmotta/deep_learning_generalization_experiments/blob/master/generalization_1.png"  width=900">
  </p>
