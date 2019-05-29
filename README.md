@@ -1,8 +1,9 @@
     in progress
     
-    Train with validation (details in tran.py):
+    Instructions (details in train.py):
     
-    Optimizer= adam for at most 3000 epochs or until target values are achieved (accuracy=1, loss=0) with batch size 128. 
+    Train with validation with optimizer= adam for at most 3000 epochs or until target values are achieved (accuracy=1, loss=0) with batch size 128. 
+    
     max_size:the maximum size of X_train, size: minimun size of x_train and increment size. 
     target_loss_value is a proxy for minimun
     
@@ -22,12 +23,22 @@ Recent developments suggest that NN's effective capacity is described by propert
 
 ## Experiment #1 - L2-norm:
 
-MLP with a Flatten layer followed by 2 Dense layers with 16 nodes (followed by relu non-linearitoes), and a Softmax layer. 
-We consider training sets with sizes: 112, 224, 384, 672, 1024, and train until training accuracy achieves 100%. 
-
-In the following graphs we compare metrics in the correctly labeled case (blue) and randomly labeled one (orange). The weights have the same initialization in both cases.
+MLP with a Flatten layer followed by 2 Dense layers with 64 nodes (followed by relu non-linearitoes), and a Softmax layer. 
+We consider training sets with sizes: 128, 256, 512, 1024, and follow training until training accuracy achieves 100% and until loss = 0.00001, which will serve as a proxy for the minimum.
 
 
  <p align="center">
- <img src="https://github.com/mfmotta/deep_learning_generalization_experiments/blob/master/generalization_1.png"  width=900">
+ <img src="https://github.com/mfmotta/deep_learning_generalization_experiments/blob/master/images/acc1_random_vs_correct_labels.png"  width=900">
+ </p>
+
+<p align="center">
+ <img src="https://github.com/mfmotta/deep_learning_generalization_experiments/blob/master/images/loss0_random_vs_correct_labels.png"  width=900">
+ </p>
+
+<p align="center">
+ <img src="https://github.com/mfmotta/deep_learning_generalization_experiments/blob/master/images/correct_labels_acc1_vs_loss0.png"  width=900">
+ </p>
+
+<p align="center">
+ <img src="https://github.com/mfmotta/deep_learning_generalization_experiments/blob/master/images/random_labels_acc1_vs_loss0.png"  width=900">
  </p>
