@@ -4,8 +4,8 @@
     
     Train with validation with optimizer= adam for at most 3000 epochs or until target values are achieved (accuracy=1, loss=0) with batch size 128. 
     
-    max_size:the maximum size of X_train, size: minimun size of x_train and increment size. 
-    target_loss_value is a proxy for minimun
+    max_size:the maximum size of X_train, size: minimum size of x_train and increment size. 
+    target_loss_value is a proxy for minimum
     
     python train.py --random_labels=False --opt=Adam --max_epcs=3000 --bs=128 --max_size=1024 --size=128 --target_loss_value=0.00001 --seed=False --path='/home/mariele/PycharmProjects/generalization/'
 
